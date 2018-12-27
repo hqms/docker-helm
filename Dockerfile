@@ -1,11 +1,11 @@
 FROM alpine:3.8 as build
-LABEL maintainer="Mario Siegenthaler <mario.siegenthaler@linkyard.ch>"
+LABEL maintainer="HQM <hakim.arif.harier@gmail.com>"
 
 RUN apk add --update --no-cache ca-certificates git
 
 ENV VERSION=v2.12.1
 ENV FILENAME=helm-${VERSION}-linux-amd64.tar.gz
-ENV SHA256SUM=02a4751586d6a80f6848b58e7f6bd6c973ffffadc52b4c06652db7def02773a1
+ENV SHA256SUM=891004bec55431b39515e2cedc4f4a06e93782aa03a4904f2bd742b168160451
 
 WORKDIR /
 
